@@ -1,0 +1,43 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0; /*把边距设为0*/
+	padding: 0; /*把填充设为0*/
+	font-size: 12px; /*字体大小*/
+}
+
+body {
+	background-color: #f0f0f0;
+}
+
+.top {
+	width: 100%;
+	height: 27px;
+	border: black 1px solid;
+}
+
+.top_content {
+	width: 1000px;
+	margin: 0 auto; /*上下间距为0 左右间距自动，盒子居中s*/
+}
+
+.top_content li {
+	list-style-image: url(image/li_bg.gif);
+	float: right;
+	width: 70px;
+	line-height: 27px;
+	float: right; /*设置子盒子行高与父盒子高度相同，使子盒子里文字居中*/
+}
+.top_content a:link,.top_content a:visited{
+	color:#8E8E8E;
+	text-decoration: none;
+}
+.top_content a:hover,top_content a:active{
+	color:#0d5353;
+}
+.left_aside{
+	border:black 1px solid;
+	width:150px;
+	height:500px
+	
+}
