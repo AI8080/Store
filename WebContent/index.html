@@ -5,6 +5,14 @@
 <title>测试商城</title>
 <link type="text/css" rel="stylesheet" href="css/main.css">
 <script type="text/javascript" src="js/setHomeSetFav.js"></script>
+<script type="text/javascript" src="js/myfocus-2.0.1.min.js"></script>
+<script type="text/javascript" src="js/mf-pattern/mF_tbhuabao.js"></script>
+<link type="text/css" href="js/mf-pattern/mF_tbhuabao.css">
+<script type="text/javascript">
+	myFocus.set({
+		id : 'ad_box'
+	})
+</script>
 </head>
 <body>
 	<div class="top">
@@ -16,21 +24,99 @@
 				<li><a href="#" onclick="SetHome(window.loaction)">设为首页</a></li>
 			</ul>
 		</div>
+		<!-- top_content over -->
 	</div>
-	<!-- top结束 -->
+	<!-- top over -->
 	<div class="table_main">
 		<div class="table_main_row">
 			<div class="left_aside">
-				<img src="image/open.png" alt="open">
+				<img src="image/search.jpg" alt="open">
 			</div>
 			<!-- left_aside结束 -->
-			<div class="main"></div>
-			<!-- main结束 -->
-		</div>
+			<div class="main">
+				<div class="nav_left"></div>
+				<div class="nav_mid">
+					<div class="nav_mid_left">
+						<ul>
+							<li><a href="#">登录&nbsp&nbsp&nbsp</a><a href="#">注册</a></li>
+							<li><a href="#">我的订单</a></li>
+							<li><a href="#">开通会员</a></li>
+							<li><a href="#">客服服务</a></li>
+							<li><a href="#">网站导航</a></li>
+						</ul>
+					</div>
+					<div class="nav_mid_mid">
+						<form action="" method="post">
+							<input type="text" class="search_text">
+						</form>
+					</div>
+					<div class="nav_mid_right">
+						<a href="#">购物车</a>
+					</div>
+				</div>
+				<div class="nav_right"></div>
+				<!-- 焦点图 -->
+				<div class="ad_user">
+					<div class="ad_left" id="ad_box">
+						<div class="loading">
+							<img alt="loading" src="image/loading.gif">
+						</div>
+						<div class="pic">
+							<!-- 滚动页面使用是必须用pic盒子包起来 -->
+							<ul>
+								<li><img src="image/ad1.png"></li>
+								<li><img src="image/ad2.png"></li>
+								<li><img src="image/ad3.png"></li>
+								<li><img src="image/ad4.png"></li>
+							</ul>
+						</div>
+					</div>
+					<!-- ad_left over -->
+					<div class="ad_mid">
+						<ul>
+							<li><img src="image/ad1_side.png"></li>
+							<li><img src="image/ad2_side.png"></li>
+							<li><img src="image/ad3_side.png"></li>
+						</ul>
+					</div>
+					<!-- ad_mid over -->
+					<div class="ad_right">
+						<div class="user_scr">
+							<img src="image/user.png">
+							<p>欢迎来到商城！</p>
+							<p class="username">请登录！</p>
+							<p>
+								<a href="#">登录</a>&nbsp&nbsp&nbsp<a href="#">注册</a>
+							</p>
+						</div>
+						<div class="news">
+							<h2>
+								商城快报&nbsp&nbsp&nbsp<a href="#">more&gt&gt</a>
+							</h2>
+							<ul>
+								<li><span>公告</span>&nbsp&nbsp<a href="#">商城启动全新客服</a></li>
+								<li><span>热门</span>&nbsp&nbsp<a href="#">iphone XR再见！</a></li>
+								<li><span>推荐</span>&nbsp&nbsp<a href="#">iphone清仓</a></li>
+								<li><span>活动</span>&nbsp&nbsp<a href="#">优选好货</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
 
+			</div>
+			<!-- main over -->
+		</div>
+		<!-- table_main over -->
+	</div>
+	<!-- table_main_row over -->
+	<div class="secKill">
+		<div class="secKill-time">1</div>
+		<div class="secKill-ad">2</div>
+		<div class="secKill-box">3</div>
+		<div></div>
+		<div></div>
 	</div>
 	<div id="footer"></div>
 	<div id="userinfo"></div>
-
 </body>
 </html>
